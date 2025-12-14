@@ -47,6 +47,7 @@ def init_db():
 
 init_db()
 
+
 #登録
 @app.route('/register', methods = ["GET", "POST"])
 def register():

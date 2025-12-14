@@ -36,3 +36,12 @@ ul li{
     margin-right: 50px;
     list-style: none;
 }
+
+@media screen and (max-width: 768px) {
+    .top{
+        display: block;
+    }
+    .top .logout{
+        margin-top: 30px;
+    }
+}
