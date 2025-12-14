@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+  <title>ポン酢掲示板 自作webアプリ</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="top">
+        <h1>ぽんず掲示板（仮名）</h1>
+        <form action="/button" method="post" class="writing">
+            <button><h3>書き込む</h3></button>
+        </form>
+        <form action="/logout">
+          <button type="submit">ログアウト</button>
+        </form>
+    </div>
+{% for post in posts %}
+  <div class="comment">
+    <p>{{ post['body'] }}</p>
+    <ul>
+      <li>{{ post['name'] }}</li>
+      <li>{{ post['created_at'] }}</li>
+    </ul>
+  </div>
+{% endfor %}
+</body>

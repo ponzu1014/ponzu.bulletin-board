@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body{
+    width: 80%;
+    font-family:"游ゴシック";
+    margin-right: auto;
+    margin-left : auto;
+}
+.top h1{
+    font-family: "游明朝";
+    text-align: center;
+    font-size: 40px;
+}
+.top{
+    text-align: center;
+    display: flex;
+}
+.writing{
+    margin: auto;
+}
+.writing button{
+    width: 300px;
+    border-color: chocolate;
+}
+.comment{
+    border-top: 1px solid rgb(88, 51, 24);
+    border-bottom: 1px solid rgb(87, 49, 24);
+    margin-bottom: 5px;
+    padding: 0 30px;
+}
+ul{
+    display: flex;
+    padding: 0;
+}
+ul li{
+    margin-right: 50px;
+    list-style: none;
+}

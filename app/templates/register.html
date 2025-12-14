@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>登録ページ</title>
+</head>
+<body>
+    <h1>ユーザー登録</h1>
+    <form action="/register" method="post">
+        <p>*名前は他のユーザーが見ることができます。個人情報を書かないように注意してください</p>
+        <input name="username" placeholder="名前" required><br>
+        <input name="password" placeholder="パスワード" type="password" required><br>
+        <button type="submit">登録</button>
+        <a href="/login">ログインへ</a>
+    </form>
+</body>
+</html>
